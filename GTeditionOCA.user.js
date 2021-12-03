@@ -3,7 +3,6 @@
 // @namespace    http://tampermonkey.net/
 // @version      3.0.2
 // @description  A custom script for OneConfig Advanced changing GUI and adding front-end based features.
-// @author       WW TecHub, vojtech.kulhavy[at]hpe.com, jiri.zima[at]hpe.com
 // will be applied only on below sites
 // @match        https://ngc-pro-oca-internal.houston.hp.com/oca/OCAInternalLogin
 // @match        https://ngc-pro-ocac2-internal.houston.hp.com/ocacluster2/OCAInternalLogin
