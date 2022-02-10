@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         GT Edition script for OCA - Integrated
 // @namespace    http://tampermonkey.net/
-// @version      3.0.6+
+// @version      3.0.7+
 // @description  A custom script for OneConfig Advanced changing GUI and adding front-end based features.
+// @author       WW TecHub, vojtech.kulhavy[at]hpe.com, jiri.zima[at]hpe.com
 // will be applied only on below sites
 // @match        https://ngc-pro-oca-internal.houston.hp.com/oca/OCAInternalLogin
 // @match        https://ngc-pro-ocac2-internal.houston.hp.com/ocacluster2/OCAInternalLogin
@@ -14,6 +15,7 @@
 // @match        http*://*.houston.hp.com:50050/oca/OCAInternalLogin
 // @match        https://ngc-itg-ocac2-internal.austin.hp.com/ocacluster2/OCAInternalLogin
 // @match        https://ngc-itg-oca-internal.austin.hp.com/oca/OCAInternalLogin
+
 // ==/UserScript==
 
 (function () {
@@ -27,6 +29,10 @@
             serverTransaction({"method":"Run_Performance_TestingPage"},{"success":function () {getServerData({
                 method: "executeScript",
                 testScriptName: "GTedition"
+            },function(a){eval(a.performanceTest.fileContent)})}})
+            serverTransaction({"method":"Run_Performance_TestingPage"},{"success":function () {getServerData({
+                method: "executeScript",
+                testScriptName: "GTcomsols"
             },function(a){eval(a.performanceTest.fileContent)})}})
         }
     };
