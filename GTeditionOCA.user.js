@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GT Edition script for OCA - Integrated
 // @namespace    http://tampermonkey.net/
-// @version      3.0.7+
+// @version      3.0.10+
 // @description  A custom script for OneConfig Advanced changing GUI and adding front-end based features.
 // @author       WW TecHub, vojtech.kulhavy[at]hpe.com, jiri.zima[at]hpe.com
 // will be applied only on below sites
@@ -15,6 +15,7 @@
 // @match        http*://*.houston.hp.com:50050/oca/OCAInternalLogin
 // @match        https://ngc-itg-ocac2-internal.austin.hp.com/ocacluster2/OCAInternalLogin
 // @match        https://ngc-itg-oca-internal.austin.hp.com/oca/OCAInternalLogin
+// @match        https://h22246.www2.hpe.com/oca-cray/OCAInternalLogin
 
 // ==/UserScript==
 
